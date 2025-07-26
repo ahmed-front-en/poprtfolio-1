@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed | Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="nav neumorph" id="nav">
+      <ul>
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="neumorph">AR</button>
+        <button id="theme-toggle" class="neumorph">🌙</button>
+        <button id="glow-toggle" class="neumorph">✨</button>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="section neumorph" data-aos="fade-up">
+      <div class="hero-img-wrapper">
+        <img src="assets/profile.jpg" alt="Ahmed Profile" class="hero-img" />
+      </div>
+      <h1 data-i18n="hero.title">I'm Ahmed, a Frontend Developer.</h1>
+      <p data-i18n="hero.subtitle">I build sleek, fast, and responsive user interfaces with clean code and modern aesthetics.</p>
+      <div class="hero-actions">
+        <button class="cta neumorph" data-i18n="hero.projects">View Projects</button>
+        <button class="cta neumorph" data-i18n="hero.contact">Contact Me</button>
+      </div>
+    </section>
+    <!-- About Me -->
+    <section id="about" class="section neumorph" data-aos="fade-up">
+      <h2 data-i18n="about.title">About Me</h2>
+      <p data-i18n="about.text">Frontend developer passionate about modern web technologies, UI/UX, and building beautiful, performant interfaces. I love solving problems, learning new tools, and collaborating with creative teams. My focus is on clean code, accessibility, and pixel-perfect design.</p>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section neumorph" data-aos="fade-up">
+      <h2 data-i18n="skills.title">Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress"><div class="bar" style="width:95%"></div></div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progress"><div class="bar" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress"><div class="bar" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="progress"><div class="bar" style="width:80%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Tailwind</span>
+          <div class="progress"><div class="bar" style="width:75%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Git</span>
+          <div class="progress"><div class="bar" style="width:70%"></div></div>
+        </div>
+      </div>
+    </section>
+    <!-- Frontend Skills Pro Section -->
+    <section id="skills-pro" class="section neumorph" data-aos="fade-up">
+      <h2><i class="fas fa-laptop-code"></i> Frontend Pro Skills</h2>
+      <div class="skills-pro-list">
+        <div class="skill-pro">
+          <i class="fab fa-html5"></i>
+          <span>HTML5</span>
+          <p>Semantic, SEO-friendly markup and accessibility best practices.</p>
+        </div>
+        <div class="skill-pro">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+          <p>Modern layouts (Flexbox, Grid), animations, and responsive design.</p>
+        </div>
+        <div class="skill-pro">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript (ES6+)</span>
+          <p>Clean, modular code, async patterns, and performance optimization.</p>
+        </div>
+        <div class="skill-pro">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+          <p>Reusable components, hooks, and state management.</p>
+        </div>
+        <div class="skill-pro">
+          <i class="fab fa-sass"></i>
+          <span>SASS & Tailwind</span>
+          <p>Utility-first CSS, scalable architecture, and rapid prototyping.</p>
+        </div>
+        <div class="skill-pro">
+          <i class="fab fa-git-alt"></i>
+          <span>Git & GitHub</span>
+          <p>Version control, collaboration, and CI/CD workflows.</p>
+        </div>
+        <div class="skill-pro">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Responsive & Mobile</span>
+          <p>Pixel-perfect interfaces for all devices and screen sizes.</p>
+        </div>
+        <div class="fas fa-paint-brush skill-pro">
+          <span>UI/UX Design</span>
+          <p>Modern, minimal, and user-centric design principles.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="section neumorph" data-aos="fade-up">
+      <h2 data-i18n="projects.title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card neumorph" data-aos="zoom-in"></div>
+        <div class="project-card neumorph" data-aos="zoom-in"></div>
+        <div class="project-card neumorph" data-aos="zoom-in"></div>
+        <div class="project-card neumorph" data-aos="zoom-in"></div>
+        <div class="project-card neumorph" data-aos="zoom-in"></div>
+        <div class="project-card neumorph" data-aos="zoom-in"></div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="section neumorph" data-aos="fade-up">
+      <h2 data-i18n="services.title">Services</h2>
+      <ul class="services-list">
+        <li data-i18n="services.uiux" data-aos="flip-left"><i class="fas fa-paint-brush service-icon" style="color:#7f5af0"></i> UI/UX Design</li>
+        <li data-i18n="services.responsive" data-aos="flip-left"><i class="fas fa-tablet-alt service-icon" style="color:#61dafb"></i> Responsive Layouts</li>
+        <li data-i18n="services.react" data-aos="flip-left"><i class="fab fa-react service-icon" style="color:#7f5af0"></i> React Components</li>
+        <li data-i18n="services.performance" data-aos="flip-left"><i class="fas fa-rocket service-icon" style="color:#61dafb"></i> Frontend Performance</li>
+      </ul>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section neumorph" data-aos="fade-up">
+      <h2 data-i18n="contact.title">Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="cta neumorph" data-i18n="contact.send">Send</button>
+      </form>
+      <div class="contact-links">
+        <a href="https://github.com/ahmed" class="neumorph" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://facebook.com/ahmed" class="neumorph" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://wa.me/201234567890" class="neumorph" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:ahmed@email.com" class="neumorph" title="Email"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer neumorph">
+      <button id="lang-toggle-footer" class="neumorph">AR</button>
+      <button id="theme-toggle-footer" class="neumorph">🌙</button>
+      <div class="footer-links">
+        <a href="https://github.com/ahmed" class="neumorph" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://facebook.com/ahmed" class="neumorph" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://wa.me/201234567890" class="neumorph" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:ahmed@email.com" class="neumorph" title="Email"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body>
-  <div id="app">
+  <div id="app" class="responsive-app">
     <!-- Navigation -->
-    <nav class="nav neumorph" id="nav">
+    <nav class="nav neumorph responsive-nav" id="nav">
       <ul>
         <li><a href="#hero" data-i18n="nav.home">Home</a></li>
         <li><a href="#about" data-i18n="nav.about">About</a></li>
@@ -22,15 +22,14 @@
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <button id="lang-toggle" class="neumorph">AR</button>
-        <button id="theme-toggle" class="neumorph">🌙</button>
-        <button id="glow-toggle" class="neumorph">✨</button>
+        <button id="lang-toggle" class="neumorph">EN</button>
+        <button id="theme-toggle" class="neumorph" aria-label="Toggle theme"><span style="color:#fff;font-size:1.5rem">🌙</span></button>
       </div>
     </nav>
     <!-- Hero Section -->
-    <section id="hero" class="section neumorph" data-aos="fade-up">
+    <section id="hero" class="section neumorph responsive-hero" data-aos="fade-up">
       <div class="hero-img-wrapper">
-        <img src="assets/profile.jpg" alt="Ahmed Profile" class="hero-img" />
+        <img src="imgs/78374594_521621708426631_4224419481750863872_n.jpg" alt="Ahmed Profile" class="hero-img" />
       </div>
       <h1 data-i18n="hero.title">I'm Ahmed, a Frontend Developer.</h1>
       <p data-i18n="hero.subtitle">I build sleek, fast, and responsive user interfaces with clean code and modern aesthetics.</p>
@@ -40,12 +39,12 @@
       </div>
     </section>
     <!-- About Me -->
-    <section id="about" class="section neumorph" data-aos="fade-up">
+    <section id="about" class="section neumorph responsive-about" data-aos="fade-up">
       <h2 data-i18n="about.title">About Me</h2>
       <p data-i18n="about.text">Frontend developer passionate about modern web technologies, UI/UX, and building beautiful, performant interfaces. I love solving problems, learning new tools, and collaborating with creative teams. My focus is on clean code, accessibility, and pixel-perfect design.</p>
     </section>
     <!-- Skills -->
-    <section id="skills" class="section neumorph" data-aos="fade-up">
+    <section id="skills" class="section neumorph responsive-skills" data-aos="fade-up">
       <h2 data-i18n="skills.title">Skills</h2>
       <div class="skills-list">
         <div class="skill">
@@ -75,7 +74,7 @@
       </div>
     </section>
     <!-- Frontend Skills Pro Section -->
-    <section id="skills-pro" class="section neumorph" data-aos="fade-up">
+    <section id="skills-pro" class="section neumorph responsive-skills-pro" data-aos="fade-up">
       <h2><i class="fas fa-laptop-code"></i> Frontend Pro Skills</h2>
       <div class="skills-pro-list">
         <div class="skill-pro">
@@ -120,7 +119,7 @@
       </div>
     </section>
     <!-- Projects -->
-    <section id="projects" class="section neumorph" data-aos="fade-up">
+    <section id="projects" class="section neumorph responsive-projects" data-aos="fade-up">
       <h2 data-i18n="projects.title">Projects</h2>
       <div class="projects-grid">
         <div class="project-card neumorph" data-aos="zoom-in"></div>
@@ -132,7 +131,7 @@
       </div>
     </section>
     <!-- Services -->
-    <section id="services" class="section neumorph" data-aos="fade-up">
+    <section id="services" class="section neumorph responsive-services" data-aos="fade-up">
       <h2 data-i18n="services.title">Services</h2>
       <ul class="services-list">
         <li data-i18n="services.uiux" data-aos="flip-left"><i class="fas fa-paint-brush service-icon" style="color:#7f5af0"></i> UI/UX Design</li>
@@ -142,7 +141,7 @@
       </ul>
     </section>
     <!-- Contact -->
-    <section id="contact" class="section neumorph" data-aos="fade-up">
+    <section id="contact" class="section neumorph responsive-contact" data-aos="fade-up">
       <h2 data-i18n="contact.title">Contact</h2>
       <form id="contact-form">
         <input type="text" name="name" placeholder="Name" required>
@@ -158,9 +157,9 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer neumorph">
-      <button id="lang-toggle-footer" class="neumorph">AR</button>
-      <button id="theme-toggle-footer" class="neumorph">🌙</button>
+    <footer class="footer neumorph responsive-footer">
+      <button id="lang-toggle-footer" class="neumorph">EN</button>
+      <button id="theme-toggle-footer" class="neumorph" aria-label="Toggle theme"><span style="color:#fff;font-size:1.5rem">🌙</span></button>
       <div class="footer-links">
         <a href="https://github.com/ahmed" class="neumorph" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://facebook.com/ahmed" class="neumorph" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>

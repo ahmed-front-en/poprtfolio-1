@@ -7,13 +7,31 @@ AOS.init({
 // Glow Cursor
 // 
 // Theme Toggle
+
 const themeToggle = document.getElementById('theme-toggle');
 const themeToggleFooter = document.getElementById('theme-toggle-footer');
-function toggleTheme() {
-  document.body.classList.toggle('light');
-  themeToggle.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
-  themeToggleFooter.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
+function setThemeIcon() {
+  const isLight = document.body.classList.contains('light');
+  themeToggle.innerHTML = isLight ? '<span style="color:#7f5af0;font-size:1.5rem">☀️</span>' : '<span style="color:#fff;font-size:1.5rem">🌙</span>';
+  themeToggleFooter.innerHTML = isLight ? '<span style="color:#7f5af0;font-size:1.5rem">☀️</span>' : '<span style="color:#fff;font-size:1.5rem">🌙</span>';
+  document.querySelectorAll('.cta.neumorph, .nav-actions .neumorph').forEach(btn => {
+    btn.style.color = isLight ? '#23242a' : '#fff';
+  });
 }
+
+
+function toggleTheme() {
+  document.body.classList.add('theme-fade');
+  setTimeout(() => {
+    document.body.classList.toggle('light');
+    setThemeIcon();
+    setTimeout(() => {
+      document.body.classList.remove('theme-fade');
+    }, 600);
+  }, 50);
+}
+
+setThemeIcon();
 themeToggle.addEventListener('click', toggleTheme);
 themeToggleFooter.addEventListener('click', toggleTheme);
 

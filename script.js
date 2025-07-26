@@ -121,8 +121,13 @@ glowToggle.addEventListener('click', toggleGlow);
 const nav = document.getElementById('nav');
 if (window.innerWidth <= 600) {
   nav.addEventListener('click', function(e) {
-    if (e.target === nav) {
+    // إذا ضغط على أيقونة الهامبرجر أو أي مكان في الناف غير القائمة
+    if (e.target === nav || e.target === nav.querySelector('::after')) {
       nav.classList.toggle('active');
+    }
+    // إذا ضغط على رابط في القائمة، أغلق القائمة
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('active');
     }
   });
 }

@@ -1,3 +1,60 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px #7f5af044;
+  background: inherit;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.project-card:hover {
+  box-shadow: 0 4px 24px #61dafb88;
+  transform: translateY(-6px) scale(1.03);
+}
+.project-img {
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px #7f5af044;
+  margin-bottom: 1rem;
+  background: #23242a;
+}
+body.light .project-img {
+  background: #e3e6ee;
+  box-shadow: 0 2px 8px #dbeafe;
+}
+.project-card h3 {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7f5af0;
+  text-align: center;
+}
+body.light .project-card h3 {
+  color: #61dafb;
+}
+.project-link {
+  color: #fff;
+  background: linear-gradient(135deg, #7f5af0 0%, #61dafb 100%);
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 2px 8px #7f5af044;
+  display: inline-block;
+}
+.project-link:hover {
+  background: linear-gradient(135deg, #61dafb 0%, #7f5af0 100%);
+  color: #23242a;
+}
+body.light .project-link {
+  color: #23242a;
+}
 
 
 
@@ -51,7 +108,7 @@ body.light .cta.neumorph, body.light .nav-actions .neumorph {
 }
 
 .hero-img-wrapper {
-  background: #23242a;
+  background: transparent;
   box-shadow: 0 4px 24px #7f5af044;
   border-radius: 50%;
   overflow: hidden;
@@ -63,7 +120,7 @@ body.light .cta.neumorph, body.light .nav-actions .neumorph {
   align-items: center;
 }
 body.light .hero-img-wrapper {
-  background: #e3e6ee;
+  background: transparent;
   box-shadow: 0 4px 24px #dbeafe;
 }
 .hero-img {
